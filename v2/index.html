@@ -1,27 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Luís Bragança">
-    <meta name="description" content="Luís Bragança's personal webpage">
-    <meta name="keywords" content="luís, bragança, braganca, da silva, informatics, software, engineering, engenharia, developer, programming, programação">
-    <title>Luís Bragança</title>
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon" rel="noreferrer" />
-    <link href="./css/main.css" rel="stylesheet" type="text/css" />
-    <script src="./js/main.js"></script>
+    <title></title>
+
+<script src="./js/three.r92.min.js"></script>
+<script src="./js/vanta.dots.min.js"></script>
+<script>
+window.addEventListener('load', function () {
+  VANTA.DOTS({
+  el: "#vantajs",
+  color: 0x20b0ff,
+  color2: 0xffffff
+})  
+})
+
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<style type="text/css">
+    .thin {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        z-index: 2;
+        overflow: hidden;
+        position: relative;
+
+    }
+    .text {
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+        z-index: 2;
+        overflow: hidden;
+        position: relative;
+
+    }
+    #github_btn {
+        z-index: 2;
+        overflow: hidden;
+        position: relative;
+
+    }
+    .element_div {
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+        background-color: rgba(0,0,0,.3);
+        border-radius: 15px;
+        width: 50%;
+
+    }
+</style>
+    <h2 class="text"></h2>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <div id="sidenav">
-        <button id="sidenavBtn">&#9776;</button>
-    </div>
-    <div id="container">
-        <div id="output"></div>
-        <div id="input-line" class="input-line">
-            <div id="prompt" class="green"></div>&nbsp;
-            <input type="text" id="cmdline" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus />
-        </div>
-    </div>
+<body bgcolor="#222222">
+    <section style="width: 100%">
+        <div align="center">
+    <h1 class="text" style="color: #20b0ff">Gleb Rusiaev</h1>
+    <h3 class="text" >I am CTF-player, member of BA D5 7A 7E and a person interested in physics and computer science.</h3>
+    <h2 class="text" > [ PROJECTS ]</h2>
+
+    <div class="element_div">
+    <h3 class="text" style="color: #20b0ff">Lossless Geometry Compression</h3>
+    
+    <h5 class="text">New compression algo, based on root extraction (MIT license)</h5>
+<a  class="github-button" href="https://github.com/rusyaew/LGC" data-size="large" aria-label="Check rusyaew/LGC on GitHub">Visit</a><p></p></div>
+    <br>
+    <br>
+    <div class="element_div">
+    <h3 class="text" style="color: #20b0ff">omicronsci.me</h3>
+    
+    <h5 class="text">Nonprofit publisher of rigorous and creative at the same time mathematics & original and interesting science articles (Creative Commons) (closed because the only article was mine)</h5></div>
+    <br><br>
+
+        <div class="element_div">
+    <h3 class="text" style="color: #20b0ff">PyDRM</h3>
+    
+    <h5 class="text">Python cryptor & obfuscator, based on XOR (GNU GPL v3)</h5>
+<a  class="github-button" href="https://github.com/rusyaew/pydrm" data-size="large" aria-label="Check rusyaew/LGC on GitHub">Visit</a><p></p></div>
+
+<h2 class="text">[ AWARDS ]</h2>
+
+
+</div>
+
+
+
+
+
+
+
+    <div id="vantajs" width="100%" style="position: absolute; z-index: 0; top: 0px; left: 0px; width: 100%;"></div>
+
+    </section>
 </body>
 </html>
