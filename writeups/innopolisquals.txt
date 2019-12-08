@@ -1,0 +1,43 @@
+ /$$$$$$                                             /$$/$$                 /$$$$$$                   /$$           /$$          /$$$$$$  /$$$$$$  /$$$$$$  /$$$$$$ 
+|_  $$_/                                            | $|__/                /$$__  $$                 | $$         /$$$$         /$$__  $$/$$$_  $$/$$__  $$/$$$_  $$
+  | $$  /$$$$$$$ /$$$$$$$  /$$$$$$  /$$$$$$  /$$$$$$| $$/$$ /$$$$$$$      | $$  \ $$/$$   /$$ /$$$$$$| $$ /$$$$$$|_  $$        |__/  \ $| $$$$\ $|__/  \ $| $$$$\ $$
+  | $$ | $$__  $| $$__  $$/$$__  $$/$$__  $$/$$__  $| $| $$/$$_____/      | $$  | $| $$  | $$|____  $| $$/$$_____/ | $$          /$$$$$$| $$ $$ $$ /$$$$$$| $$ $$ $$
+  | $$ | $$  \ $| $$  \ $| $$  \ $| $$  \ $| $$  \ $| $| $|  $$$$$$       | $$  | $| $$  | $$ /$$$$$$| $|  $$$$$$  | $$         /$$____/| $$\ $$$$/$$____/| $$\ $$$$
+  | $$ | $$  | $| $$  | $| $$  | $| $$  | $| $$  | $| $| $$\____  $$      | $$/$$ $| $$  | $$/$$__  $| $$\____  $$ | $$        | $$     | $$ \ $$| $$     | $$ \ $$$
+ /$$$$$| $$  | $| $$  | $|  $$$$$$| $$$$$$$|  $$$$$$| $| $$/$$$$$$$/      |  $$$$$$|  $$$$$$|  $$$$$$| $$/$$$$$$$//$$$$$$      | $$$$$$$|  $$$$$$| $$$$$$$|  $$$$$$/
+|______|__/  |__|__/  |__/\______/| $$____/ \______/|__|__|_______/        \____ $$$\______/ \_______|__|_______/|______/      |________/\______/|________/\______/ 
+                                  | $$                                          \__/                                                                                
+                                  | $$                                                                                                                              
+                                  |__/                                                                                                                              
+
+# admin 300 Labyrinth
+Connect to ssh; When you escaping from VIM (:q), server disconnecting you
+So, we need to get shell in vim AND VIM HAS THIS FUNCTION (https://github.com/vim/vim/commit/e4f25e4a8db2c8a8a71a4ba2a68540b3ab341e42)
+executing !:term will gave you shell!
+
+# crypto 200 1->@, 2->!
+This is subsitition cipher.
+
+# ppc 100-300 ArchiLike
+Parsing '+', '-', '*' in ArchiLike1-ArchiLike2
+Using SymPy for solving equations in ArchiLike3
+
+# stego 100 Cat
+Flag in RAR in the end of 11d32.jpg
+
+# stego 200 Siren howl
+Spectrogramm (can check it in Audacity)
+
+# web 100 StupidDeveloper 1
+Cookie is_admin from false to true, THEN RELOAD AND THEN BACK (idk why)
+
+# web 200 StupidDeveloper 2
+Using DELETE http method.
+
+# web 300 StupidDeveloper 3
+robots.txt get us site.log and error.log (and we know that it is we****g)
+So, we have debug console and we don't know PIN (spoiler: we know bec we have site.log that logs
+all console of server ((where PIN located)) )
+
+# crypto or misc i'm so lazy to check 100 Classic
+Cesuar
