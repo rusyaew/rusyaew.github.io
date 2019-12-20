@@ -34,6 +34,12 @@
 	
 	}
 	
+	pre {
+		background: #f4f4f4;
+		border: 1px double black;
+		padding: 25px;
+	}
+	
   </style>
   
   
@@ -49,7 +55,7 @@
 		<p class="text"><b><a href="http://rusyaew.github.io/">CRYPTO WIKI</a> | <a href="http://rusyaew.github.io/about/index.html">ABOUT ME</a> | <a href="http://rusyaew.github.io/writeups">WRITEUPS</a></b></p>
 		<div class="articles" align="left">
 			<p class="text">19 December 2019</p>
-			<h2 class="head">Symmetrical Encryption: One Time Pad, AES & Stuff</h2>
+			<h2 class="head">Symmetrical Encryption: One Time Pad</h2>
 			<hr>
 			<img src="http://rusyaew.github.io/img/symmetrical_1.png" width="100%">
 			<p class="text">You might have heard that ciphers are divided into symmetrical and non-symmetrical. In the picture, you can see symmetrical encryption. "Symmetrical" means that encryption and decryption use the same key.</p>
@@ -59,7 +65,38 @@
 			<img src="http://rusyaew.github.io/img/one_time_pad.png" width="100%">
 			<p class="text">Where m<sub>i</sub> , k<sub>i</sub> and c<sub>i</sub> is i<sup>th</sup> letter of message, key and ciphertext, respectively.</p>
 			<p class="text">But how can we present the “exclusive or” operation in a more familiar form?</p>
-			<img src="http://rusyaew.github.io/img/mxork.png" width="100%">
+			<center><img src="../img/mxork.png" width="40%"></center>
+			<p class="text">Python implementation:</p>
+			<pre>import os
+			
+			
+msg = 'foobar'
+key = ''+os.urandom(6)
+ciphertext = b''
+
+for i in range(msg):
+	m_i = ord(msg[i])
+	k_i = ord(key[i])
+	c_i = m_i ^ k_i
+	ciphertext.append(chr(c_i))
+			
+print(ciphertext)
+			</pre>
+			<h3 class="head">2. Cracking One Time Pad</h3>
+			<p class="text">Do not forget that OTP is indelible only under certain conditions: key length is equal to message length, key is random and we don't use one key twice.</p>
+			<p class="text">a) Maybe I can use one key twice?</p>
+			<center><img src="../img/crack1.png" width="20%"></center><br>
+			<center><img src="../img/crack2.png" width="20%"></center><br>
+			<center><img src="../img/crack3.png" width="60%"></center><br>
+			<p class="text">Because m<sub>1</sub> and m<sub>2</sub> isn't random, it is
+			<br>crackable (why? check "b" *m<sub>1</sub> was ciphered by m<sub>2</sub>).</p>
+			<p class="text">b) Maybe I can use non-random key? Check this out: <br>*Picture was ciphered by SEND CASH key.</p>
+			<center><img src="../img/demo.gif" width="60%"></center>
+			<p class="text">c) Maybe I can use key with len less than key len and just repeat it? Check this out: <a href="https://en.wikipedia.org/wiki/Differential_cryptanalysis">Differential cryptanalysis</a></p>
+			<h3 class="head">3. One Time Pad: Pros & Contras</h3>
+			<center><img src="../img/OTPprocon.png" width="60%"></center>
+			<p class="text">Even if OTP is uncrackable, real cryptographic strength of OTP is cryptographic strength of algorithm, that we using for key distribution.</p>
+			
 		</div> 
 	</div>
   
